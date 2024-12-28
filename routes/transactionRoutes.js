@@ -3,7 +3,7 @@ const router = express.Router();
 const {
   getTransactionsByUserId,
   getTransactionsWithUserDetails,
-} = require("../controllers/transactionController");
+} = require("../controllers/transactionControllers");
 
 router.get("/user/:userId", getTransactionsByUserId);
 router.get("/user", getTransactionsWithUserDetails);
